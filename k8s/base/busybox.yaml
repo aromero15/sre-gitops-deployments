@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: busy-box
+  name: sre-demo
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: busy-box
+      app: sre-demo
   template:
     metadata:
       labels:
-        app: busy-box
+        app: sre-demo
     spec:
       containers:
-        - name: busy-box
+        - name: sre-demo-busy-box
           image: docker.io/library/busybox:1.36
           command:
             - /bin/sh
