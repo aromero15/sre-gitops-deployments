@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sre-demo
+  name: sre-demo-busy-box
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sre-demo
+      app: sre-demo-busy-box
   template:
     metadata:
       labels:
-        app: sre-demo
+        app: sre-demo-busy-box
     spec:
       containers:
         - name: sre-demo-busy-box
