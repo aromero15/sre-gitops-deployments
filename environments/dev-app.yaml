@@ -22,9 +22,9 @@ spec:
     syncOptions:
       - CreateNamespace=true
     retry:
-      limit: 5
+      limit: 1
       backoff:
-        duration: 5s
+        duration: 10s
         factor: 2
-        maxDuration: 3m
+        maxDuration: 1m
   revisionHistoryLimit: 10
