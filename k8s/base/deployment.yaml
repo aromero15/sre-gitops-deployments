@@ -12,6 +12,7 @@ spec:
       labels:
         app: sre-demo
     spec:
+      replicas: 2
       containers:
         - name: sre-demo
           image: docker.io/library/nginx:1.31.8
