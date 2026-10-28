@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: sre-demo
-          image: docker.io/library/nginx:stabl
+          image: docker.io/library/nginx:stable
