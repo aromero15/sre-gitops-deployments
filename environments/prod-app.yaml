@@ -11,7 +11,7 @@ metadata:
 spec:
   project: sre-project
   source:
-    repoURL: https://github.com/YOUR-USERNAME/sre-gitops-deployments
+    repoURL: https://github.com/aromero15/sre-gitops-deployments
     targetRevision: main
     path: k8s/overlays/production
   destination:
