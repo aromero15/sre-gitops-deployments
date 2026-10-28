@@ -4,3 +4,8 @@ metadata:
   name: sre-demo
 spec:
   replicas: 3
+  template:
+    spec:
+      containers:
+        - name: sre-demo
+          image: docker.io/library/nginx:stabl
