@@ -1,3 +1,4 @@
 resources:
+  - busybox.yaml
   - deployment.yaml
   - service.yaml
