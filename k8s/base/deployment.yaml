@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: sre-demo
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: sre-demo
@@ -12,7 +12,6 @@ spec:
       labels:
         app: sre-demo
     spec:
-      replicas: 2
       containers:
         - name: sre-demo
           image: docker.io/library/nginx:1.31.8
